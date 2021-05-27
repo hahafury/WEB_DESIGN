@@ -5,6 +5,7 @@
    sans-serif;
 }
 
+
 hr{
     width:100%;
     height:2px;
@@ -12,7 +13,6 @@ hr{
 
 header{
     width:100%;
-    height:100vh;
     position: relative;
     z-index:2;
     box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.75);
@@ -35,12 +35,12 @@ header #topHeader .logotype{
 }
 
 header #topHeader .logotype img{
-    width:70%;
+    width:60%;
     height:inherit;
 }
 
 header #topHeader .navbar{
-    width:40%;
+    width:50%;
     height:100%;
     display:flex;
     flex-direction: row;
@@ -56,6 +56,7 @@ header #topHeader .navbar li{
 header #topHeader .navbar li a{
     text-decoration: none;
     color:#606061;
+    font-size:20px;
 }
 
 header #topHeader .navbar li a:hover{
@@ -69,10 +70,11 @@ header #topHeader .navbar li a:hover{
 
 header #bottomHeader{
     width:100%;
-    height:80%;
-    background-image: url('https://ixbt.online/gametech/covers/2021/01/13/BTw1xVT6jun2G9cWOYLgIJDC8WCj2v6rJqOx5caC.jpg');
+    height:300px;;
+    background-image: url('https://c.wallhere.com/photos/55/d7/1600x844_px_Dota_2_Shadow_Fiend_video_games-714652.jpg!d');
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
+    background-position: center;
     object-fit: cover;
     background-blend-mode: multiply;
     background-color:#37383829;
@@ -84,11 +86,14 @@ header #bottomHeader .description{
     width:50%;
     display:flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
+    align-items: flex-start;
+    justify-content: flex-start;
     color:white;
 }
 
+header #bottomHeader .description img{
+    width:30%;
+}
 
 /*MAIN--------------------------------------------------------------------------*/
 
@@ -98,7 +103,7 @@ main{
 }
 
 main .wrapper{
-    padding:4em 1em;
+    padding:1em 1em;
     height:100%;
     width:100%;
     display:flex;
@@ -107,7 +112,7 @@ main .wrapper{
 
 main .wrapper .games,.consoles{
     width:100%;
-    height:50%;
+    height:auto;
     display:flex;
     flex-wrap:wrap;
     justify-content: space-around;
@@ -115,15 +120,15 @@ main .wrapper .games,.consoles{
 }
 
 main .wrapper .games .gameCard{
-    width:30%;
-    height:50%;
+    width:250px;
+    height:250px;
     padding:0 2em 2em 2em;
 }
 
 main .wrapper .games .gameCard img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
+    width:250px;
+    height:250px;
+    object-fit:contain;
 }
 
 main .wrapper .games .gam{
